@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="C:\Users\Tejaswini\Desktop\WT\Login\Page Of Registration\Registration.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav>
+<h1>
+Traveller
+</h1>
+</nav>
+
+<h1 class="text-white text-center font-weight-bold" style="font-size: 55px; background-color:rbg(111,244,224); margin-bottom:35px; ">User Registration </h1>
+
+	<div class="container" style="background-color:rgba(0,0,0,0.7); width:80%; height:800%; font-size:18px; border-radius:10px; border: 1px solid rgba(255,255,255,0.3); box-shadow:2px 2px 15px; rgba:(0,0,0,0.3); color:#fff; margin-bottom:100px; "><br>
+		
+		<div style="width:70%;  margin-left:180px; margin-top:10px;">
+			
+			<form action="#" onsubmit="return validation()" >
+				
+				<div class="form-group">
+					<label for="user" class="font-weight-bold" style="color:rgba( 194,80,250,100);margin-left:40px;"> User Name: </label>
+					<input type="text" name="user" class="form-control" id="user" autocomplete="off" placeholder="Enter Your user name">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold" style="color:rgba(194,80,250,100);margin-left:40px;"> Password: </label>
+					<input type="password" name="pass" class="form-control" id="pass" autocomplete="off" placeholder="Enter Your new Password">
+					<span id="passwords" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold" style="color:rgba(194,80,250,100);margin-left:40px;"> Confirm Password: </label>
+					<input type="password" name="conpass" class="form-control" id="conpass" autocomplete="off"placeholder="Cofirmed the password">
+					<span id="confrmpass" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold" style="color:rgba(194,80,250,100); margin-left:40px;"> Mobile Number: </label>
+					<input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off"placeholder="Enter Your Mobile Number">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold" style="color:rgba(194,80,250,100);margin-left:40px;"> Email: </label>
+					<input type="text" name="email" class="form-control" id="emails" autocomplete="off" placeholder="Enter Your Email">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+				
+				<button class="btn" type="submit" name="submit" value="submit" autocomplete="off">Submit</button>
+<p style="margin-bottom:0px; margin-left:10px;">Already Have an Account? Done Registration?<a href="C:\Users\Tejaswini\Desktop\WT\Login\Page of Login\Login Form - No JavaScript\index.html">Login Here </a> <p>
+
+			</form><br><br>
+
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+
+		function validation(){
+
+			var user = document.getElementById('user').value;
+			var pass = document.getElementById('pass').value;
+			var confirmpass = document.getElementById('conpass').value;
+			var mobileNumber = document.getElementById('mobileNumber').value;
+			var emails = document.getElementById('emails').value;
+
+
+
+
+
+			if(user == ""){
+				document.getElementById('username').innerHTML =" ** Please fill the username field";
+				return false;
+			}
+			if((user.length <= 2) || (user.length > 20)) {
+				document.getElementById('username').innerHTML =" ** Username lenght must be between 2 and 20";
+				return false;	
+			}
+			if(!isNaN(user)){
+				document.getElementById('username').innerHTML =" ** only characters are allowed";
+				return false;
+			}
+
+
+
+
+
+
+
+			if(pass == ""){
+				document.getElementById('passwords').innerHTML =" ** Please fill the password field";
+				return false;
+			}
+			if((pass.length <= 5) || (pass.length > 20)) {
+				document.getElementById('passwords').innerHTML =" ** Passwords lenght must be between  5 and 20";
+				return false;	
+			}
+
+
+			if(pass!=confirmpass){
+				document.getElementById('confrmpass').innerHTML =" ** Password does not match the confirm password";
+				return false;
+			}
+
+
+
+			if(confirmpass == ""){
+				document.getElementById('confrmpass').innerHTML =" ** Please fill the confirmpassword field";
+				return false;
+			}
+
+
+
+
+			if(mobileNumber == ""){
+				document.getElementById('mobileno').innerHTML =" ** Please fill the mobile NUmber field";
+				return false;
+			}
+			if(isNaN(mobileNumber)){
+				document.getElementById('mobileno').innerHTML =" ** user must write digits only not characters";
+				return false;
+			}
+			if(mobileNumber.length!=10){
+				document.getElementById('mobileno').innerHTML =" ** Mobile Number must be 10 digits only";
+				return false;
+			}
+
+
+
+			if(emails == ""){
+				document.getElementById('emailids').innerHTML =" ** Please fill the email idx` field";
+				return false;
+			}
+			if(emails.indexOf('@') <= 0 ){
+				document.getElementById('emailids').innerHTML =" ** @ Invalid Position";
+				return false;
+			}
+
+			if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+				document.getElementById('emailids').innerHTML =" ** . Invalid Position";
+				return false;
+			}
+			else{
+				alert("You Done Your Registration...!!");
+			}
+		}
+
+	</script>
+
+</body>
+</html>

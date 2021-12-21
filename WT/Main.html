@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel</title>
+<style type="text/css">
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+padding:0;
+margin:0;
+}
+
+section{
+			width: 96%;
+			height: 100%;
+			margin: 0px auto;
+			position: relative;
+
+             }
+.video{
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    z-index: -1;
+            }
+
+nav{
+			width: 96%;
+			height: 70px;
+			font-family:sans-serif;
+			margin: 20px auto;
+			display: flex;
+			justify-content: space-around;
+	}
+
+nav h1{
+			color: white;
+			font-size: 50px;
+			width: 40%;
+			font-weight: bold;
+	}
+
+nav ul{
+			width: 70%;
+			list-style: none;
+	}
+
+nav ul li{
+			list-style: none;
+			float: left;
+			margin: 10px 20px;
+			padding: 10px;
+			font-size: 20px;
+			font-weight: bold;
+	}
+nav ul li a, nav ul li a .fa{
+			text-decoration: none;
+			color: white;
+	}
+
+.plan{
+			width: 80%;
+			height: 250px;
+			padding: 50px;
+			/*position: relative;
+			top: 300px;*/
+			background: #ffffff40;
+			text-align: center;
+			margin: 10px auto;
+			margin-top: 300px;
+	}
+.plan .plann{
+			width: 90%;
+			padding: 50px 20px;
+			background: white;
+			text-align: left;
+			border-radius: 10px;
+	}
+.plan h2{
+		    background: white;
+		    width: 200px;
+		    margin-left: 40%;
+		    padding: 20px;
+		    border-radius: 10px 10px 0px 0px;
+	}
+.plan .plann input{
+			font-size: 15px;
+			width: 186px;
+		    font-weight: bold;
+		    font-family: cursive;
+		    padding: 20px 10px;
+		    background: #f1f1f1;
+		    border: none;
+		    outline: none;
+	}
+.top-destination{
+			width: 90%;
+			height: 150px;
+			background: #fafafa;
+			margin: auto;
+			display: flex;
+			margin-top: 150px;
+			justify-content: space-around;
+			padding: 20px;
+	}
+.top-destination .top3{
+			width: 30%;
+			display: flex;
+			justify-content: space-around;
+		}
+.top-destination .top3 img{
+			width: 30%;
+			margin: 50px;
+			align-self: center;
+			height: 100px;
+		}
+.top-destination .top3 div{
+			align-self: center;
+		}
+
+.content{
+			width: 96%;
+			height: 600px;
+			/*background: red;*/
+			margin: 100px auto;
+	}
+.content .upper{
+			width: 100%;
+			height: 50%;
+			justify-content: space-around;
+			display: flex;
+	}
+.content .upper div{
+			width: 25%;
+			
+		}
+.content .upper div img{
+			width: 100%;
+			height: 200px;
+		}
+.bann{
+			width: 90%;
+			height: 520px;
+			background: #fafafa;
+			margin: 50px auto;
+			display: flex;
+			justify-content: left;
+	}
+.bann video{
+			width: 70%;
+		}
+.bann div{
+			width: 30%;
+		    height: 50%;
+		    letter-spacing: 5px;
+		    text-align: justify;
+		    padding: 2%;
+		    align-self: center;
+	}
+.last{
+			width: 90%;
+			height: 900px;
+			margin: 50px auto;
+			display: flex;
+			justify-content: space-around;
+	}
+.last .left{
+			width: 60%;
+			height: 100%;
+			height: auto;
+			height: 100%;
+	}
+.last img{
+			width: 40%;
+			height: 100%;
+	}
+.last .left .last3{
+			display: flex;
+			justify-content: space-around;
+			margin: 10px auto;
+	}
+.last .left .last3 img{
+			width: 40%;
+			margin: 5%;
+			height: 200px;
+	}
+.last .left .last3 div{
+			width: 40%;
+			margin: 5%;
+		}
+footer{
+			width: 90%;
+			height: 500px;
+			margin: 20px auto;
+			margin-top: 100px;
+			background: #fafafa;
+			display: flex;
+			justify-content: space-around;
+	}
+footer h1{
+			width: 40%;
+			align-self: center;
+			letter-spacing: 10px;
+			margin-left: 10%;
+			font-size: 50px;
+			font-weight: bold;
+	}
+footer .div{
+			width: 50%;
+			height: 50%;
+			align-self: center;
+			border-left: 2px solid #e5e5e5;
+			padding: 20px;
+			display: flex;
+			justify-content: space-around;
+	}		
+footer .div ul li{
+			list-style: none;
+			margin: 20px auto;
+	}
+footer .div ul li a{
+			text-decoration: none;
+			
+		}
+footer .div div input{
+			padding: 5px;
+			width: 200px;
+			margin: 20px 0px;
+			border: none;
+			outline: none;
+			background: #f1f1f1;
+		}
+footer .div div button{
+			padding: 5px;
+		    color: white;
+		    border: none;
+		    outline: none;
+		    background: #00b5be;
+		}
+
+</style>
+</head> 
+<body>
+<section>
+		<video class="video" src="C:\Users\Tejaswini\Desktop\project images\Nature (1).mp4" autoplay loop muted></video>
+		<nav>
+			<h1>Traveller</h1>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href=" C:\Users\Tejaswini\Desktop\WT\about page.html ">About</a></li>
+				<li><a href=" C:\Users\Tejaswini\Desktop\WT\our services.html ">Services</a></li>
+				<li><a href=" C:\Users\Tejaswini\Desktop\WT\Destination.html ">Destination</a></li>
+ 				 <li><a href=" C:\Users\Tejaswini\Desktop\WT\Gallery.html ">Gallary</a></li>
+				<li><a href="C:\Users\Tejaswini\Desktop\WT\Login\Page of Login\Login Form - No JavaScript\index.html">
+				<img src="C:\Users\Tejaswini\Desktop\WT\Downloads\profile.png" width=40 style="margin-top="-10px";></a></li>
+				<li><a href="#"><i class="fa fa-search"></i></a></li>
+			</ul>
+		</nav>
+		<div class="plan">
+			<h2>Make a plan</h2>
+			<div class="plann">
+				<input type="text" placeholder="City">
+				<input type="text" placeholder="Departure">
+				<input type="text" placeholder="Destination">
+				<input type="text" placeholder="Arrival">
+				<input type="text" placeholder="Returns">
+			</div>
+		</div>
+		<div class="top-destination">
+			<div class="top3">
+				<img src="C:\Users\Tejaswini\Desktop\project images\map.jpg">
+				<div>
+					<h3>Top destination</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam </p>
+				</div>
+			</div>
+			<div class="top3">
+				<img src="C:\Users\Tejaswini\Desktop\project images\des.jpg">
+				<div>
+					<h3>Top Joyfull</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+			<div class="top3">
+				<img src="C:\Users\Tejaswini\Desktop\project images\tour.jpg">
+				<div>
+					<h3>Top Secure</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="upper">
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\01.jpg">
+					<h2>Town</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\02.jpg">
+					<h2>Relaxing</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\03.jpg">
+					<h2>welcome</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+			</div>
+			<div class="upper">
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\Village.jpg">
+					<h2>Village</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\05.jpg">
+					<h2>Mountain</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+				<div>
+					<img src="C:\Users\Tejaswini\Desktop\project images\06.jpg">
+					<h2>Reading-Novel</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi,</p>
+					<h4>$345.00 </h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="bann">
+			<video src="C:\Users\Tejaswini\Desktop\project images\Green.mp4" controls></video>
+			<div>
+				<h2>All time favourite place</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nemo laboriosam veniam, facere odit commodi et praesentium, repellat vitae numquam natus at, eaque libero reprehenderit necessitatibus eligendi autem tenetur id.</p>
+			</div>
+		</div>
+
+		<div class="last">
+			<div class="left">
+				<div class="last3">
+					<img src="C:\Users\Tejaswini\Desktop\project images\07.jpg">
+					<div>
+						<h3>Top destination</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit et nulla optio mollitia est, voluptas? Pariatur perferendis veritatis aperiam maiores at! Quos autem cum laboriosam, mollitia eius. Distinctio, unde.</p>
+					</div>
+				</div>
+				<div class="last3">
+					<img src="C:\Users\Tejaswini\Desktop\project images\08.jpg">
+					<div>
+						<h3>Top Advanture</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, perspiciatis. Id et nisi obcaecati unde velit, sequi modi aliquid sapiente error saepe ullam aliquam dicta! Expedita ut tempora, blanditiis nulla!</p>
+					</div>
+				</div>
+				<div class="last3">
+                                              <img src=" C:\Users\Tejaswini\Desktop\project images\09.jpg">
+					<div>
+						<h3>Top Food festival</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi, quasi repudiandae vel facilis, voluptatibus tempora optio culpa doloremque iure consequatur eaque? Optio omnis necessitatibus ad illo placeat delectus obcaecati.</p>
+					</div>
+				</div>
+			</div>
+			<img src="C:\Users\Tejaswini\Desktop\project images\travel.jpg">
+		</div>
+	
+	<footer>
+		<h1>Traveller</h1>
+		<div class="div">
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Trip</a></li>
+				<li><a href="#">Package</a></li>
+				<li><a href="#">Secure</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Contact-us</a></li>
+				<li><a href="#">Message</a></li>
+				<li><a href="#">Latest-trip</a></li>
+				<li><a href="#">Site-map</a></li>
+			</ul>
+			<div>
+				<h4>Subscribe</h4>
+				<input type="text" >
+				<button>subscribe</button>
+			</div>
+		</div>
+		
+	</footer>
+</section>
+</body>
+</html>
